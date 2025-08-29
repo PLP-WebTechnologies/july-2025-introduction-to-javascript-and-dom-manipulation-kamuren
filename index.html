@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Travel Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Discover Kenya</h1>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="destination-grid" id="destination-container">
+                <!-- Destinations will be added dynamically via JavaScript -->
+            </div>
+            <button id="load-more">Load More Destinations</button>
+        </section>
+
+        <section id="gallery">
+            <h2>Travel Gallery</h2>
+            <div class="gallery-container" id="gallery-container">
+                <!-- Gallery items will be added dynamically -->
+            </div>
+        </section>
+
+        <section id="subscribe">
+            <h2>Stay Updated</h2>
+            <form id="subscribe-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <select id="favorite-destination">
+                    <option value="">Select Favorite Destination</option>
+                    <option value="masai-mara">Masai Mara</option>
+                    <option value="diani">Diani Beach</option>
+                    <option value="mt-kenya">Mount Kenya</option>
+                    <option value="lamu">Lamu</option>
+                </select>
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kenya Travel Blog</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
